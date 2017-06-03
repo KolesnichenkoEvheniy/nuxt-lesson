@@ -20,6 +20,13 @@ module.exports = {
     color: '#3B8070',
     height: '5px'
   },
+
+  css: [
+    'assets/main.css'
+  ],
+
+  // dev: (process.env.NODE_ENV !== 'production'),
+
   /*
   ** Build configuration
   */

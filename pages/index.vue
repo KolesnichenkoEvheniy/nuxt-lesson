@@ -1,13 +1,14 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
+      <!-- <logo/> -->
       <h1 class="title">
-        NUXT
+        Это
       </h1>
       <h2 class="subtitle">
-        Universal Vue.js Application
+        Главная страница
       </h2>
+       Счетчик: <button @click="$store.commit('increment')">{{ $store.state.counter }}</button>
       <div class="links">
         <nuxt-link to="/about">About page</nuxt-link>
       </div>

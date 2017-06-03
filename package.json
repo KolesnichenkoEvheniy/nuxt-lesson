@@ -5,12 +5,14 @@
   "author": "Evgeniy <evgeniy.web@ukr.net>",
   "private": true,
   "dependencies": {
+    "cross-env": "^5.0.0",
     "nuxt": "latest"
   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "startp": "cross-env NODE_ENV=production node server.js",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
